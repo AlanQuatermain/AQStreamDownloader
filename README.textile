@@ -1,0 +1,13 @@
+h1=. AQStreamDownloader
+
+p=. Version 1.0 -- 26 April 2010
+
+p=. By "Jim Dovey":mailto:jimdovey@mac.com
+
+h2. Introduction
+
+This is a simple class which will download anything arriving from a given NSInputStream (or CFReadStream, CFHTTPReadStreamRef, CFFTPStreamRef, etc.) to a file or to a block of memory. You can specify an output file path, or you can let the class choose one for you.
+
+h3. Dependencies
+
+The temp-file support in this class makes use of an NSFileManager class I wrote a while back, available as part of "AQToolkit":http://github.com/AlanQuatermain/AQToolkit. Look in the TempFiles folder for the relevant class, or replace with a simple NSTemporaryDirectory() wrapper of your own.
